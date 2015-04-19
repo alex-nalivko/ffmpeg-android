@@ -29,6 +29,7 @@ make clean
 --enable-libfribidi \
 --enable-fontconfig \
 --enable-pthreads \
+--enable-librtmp \
 --disable-debug \
 --disable-ffserver \
 --enable-version3 \
@@ -47,6 +48,6 @@ make clean
 --extra-libs="-lpng -lexpat -lm" \
 --extra-cxxflags="$CXX_FLAGS" || exit 1
 
-make -j${NUMBER_OF_CORES} && make install || exit 1
+make -j${NUMBER_OF_CORES} || make install || exit 1
 
 popd

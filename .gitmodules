@@ -13,3 +13,6 @@
 [submodule "fontconfig"]
 	path = fontconfig
 	url = git://anongit.freedesktop.org/fontconfig
+[submodule "rtmpdump"]
+	path = rtmpdump
+	url = git://git.ffmpeg.org/rtmpdump
